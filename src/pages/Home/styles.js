@@ -37,6 +37,7 @@ export const Content = styled.div`
       height: 5.6rem;
       padding: 0 3rem;
       border-radius: 1rem;
+      border: none;
 
       display: flex;
       align-items: center;
