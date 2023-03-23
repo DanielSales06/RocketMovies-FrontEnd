@@ -57,7 +57,7 @@ export function Home() {
           <div className="LastMovies">
             {
               movies.length == 0 ? (
-                <h2 className="emptyMovie animate__animated animate__fadeIn animate__slower">Nenhum filme encontrado</h2>
+                <h2 className="emptyMovie animate__animated animate__fadeIn animate__slower animate__delay-2s">Nenhum filme encontrado</h2>
               ) : (
                 movies.map(movie => (
                   <Movie 
