@@ -78,11 +78,6 @@ export const Profile = styled(Link)`
       object-fit: cover;
       object-position: center;
 
-      
-      @media (max-width:460px) {
-        width: 5.5rem;
-        height: 5.5rem;
-      }
   }
 
   > div {
