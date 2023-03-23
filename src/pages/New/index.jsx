@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 
 import { Container, Form, Section } from "./styles";
 
@@ -61,7 +61,7 @@ export function New() {
     });
 
     alert("Nota criada com sucesso!");
-    navigate(-1);
+    navigate("/");
    }
 
    async function handleDeleteNote() {
@@ -76,8 +76,7 @@ export function New() {
       <Header />
 
       <main>
-        <Form          className="animate__animated animate__fadeIn"
-        >
+        <Form className="animate__animated animate__fadeIn">
           <header>
             <ButtonText
               onClick={handleBack}
