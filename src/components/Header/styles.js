@@ -80,8 +80,8 @@ export const Profile = styled(Link)`
 
       
       @media (max-width:460px) {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
       }
   }
 
