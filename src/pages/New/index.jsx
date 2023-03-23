@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link ,useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Container, Form, Section } from "./styles";
 
@@ -52,6 +52,9 @@ export function New() {
     if (newTag) {
       return alert("Você deixou tags no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vázio.")
     }
+    
+    alert("Filme adicionado com sucesso!");
+    navigate(-1);
 
     await api.post("/notes", {
       title,
@@ -60,8 +63,6 @@ export function New() {
       tags
     });
 
-    alert("Nota criada com sucesso!");
-    navigate("/");
    }
 
    async function handleDeleteNote() {
@@ -137,7 +138,7 @@ export function New() {
                 title="Apagar Tudo"
                 onClick={handleDeleteNote}
               />
-              <Button 
+              <Button
                 title="Salvar Alterações"
                 onClick={handleNewNote}
               />
